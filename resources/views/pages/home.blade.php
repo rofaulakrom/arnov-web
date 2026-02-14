@@ -24,7 +24,7 @@
         </h1>
         
         <p class="text-gray-200 text-lg md:text-xl mb-10 font-light leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-            PT Arnov Sasmita Jaya hadir menghubungkan potensi agribisnis, manufaktur pangan, gaya hidup, dan kreativitas digital. Kami berdedikasi menciptakan standar kualitas tinggi di setiap sektor, tumbuh bersama mitra dan UMKM Indonesia.
+            PT Arnov Prima Nusantara hadir menghubungkan potensi agribisnis, manufaktur pangan, gaya hidup, dan kreativitas digital. Kami berdedikasi menciptakan standar kualitas tinggi di setiap sektor, tumbuh bersama mitra dan UMKM Indonesia.
         </p>
         
         <div class="flex flex-col md:flex-row justify-center gap-5">
