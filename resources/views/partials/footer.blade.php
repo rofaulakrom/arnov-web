@@ -6,7 +6,7 @@
             <div class="flex flex-col items-center md:items-start text-center md:text-left">
                 <a href="{{ route('home') }}" class="block group mb-3">
                     <span class="text-2xl font-serif font-bold text-white tracking-widest group-hover:text-gold transition duration-300">
-                        ARNOV <span class="text-gold">PRIMA </span>NUSANTARA
+                        AR<span class="text-gold">PRI</span>NUS
                     </span>
                     <p class="text-[10px] text-gray-500 uppercase tracking-[0.4em] mt-1">PT Arnov Prima Nusantara</p>
                 </a>

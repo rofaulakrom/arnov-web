@@ -156,7 +156,7 @@
 
     </div>
 
-    {{-- MODAL POPUP --}}
+    {{-- MODAL POPUP (FIXED MOBILE SCROLL) --}}
     <div x-show="isOpen" style="display: none;" class="fixed inset-0 z-50 flex items-center justify-center p-4"
          x-transition:enter="transition ease-out duration-300"
          x-transition:enter-start="opacity-0 backdrop-blur-none"
@@ -165,40 +165,54 @@
          x-transition:leave-start="opacity-100 backdrop-blur-sm"
          x-transition:leave-end="opacity-0 backdrop-blur-none">
         
+        {{-- Overlay Background --}}
         <div class="absolute inset-0 bg-black/90" @click="closeModal()"></div>
         
-        <div class="relative bg-dark-900 border border-gold w-full max-w-5xl h-[85vh] md:h-[75vh] rounded shadow-2xl flex flex-col md:flex-row overflow-hidden"
+        {{-- Modal Box Container --}}
+        <div class="relative bg-dark-900 border border-gold w-full max-w-5xl max-h-[90vh] flex flex-col md:flex-row rounded shadow-2xl overflow-hidden"
              x-transition:enter="transition ease-out duration-300" 
              x-transition:enter-start="opacity-0 scale-95 translate-y-4" 
              x-transition:enter-end="opacity-100 scale-100 translate-y-0">
             
-            <button @click="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white z-50 bg-black/50 rounded-full p-2 hover:bg-gold hover:text-black transition">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            {{-- Close Button --}}
+            <button @click="closeModal()" class="absolute top-3 right-3 text-gray-400 hover:text-white z-50 bg-black/60 rounded-full p-2 hover:bg-gold hover:text-black transition shadow-lg">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
             
-            <div class="w-full md:w-1/2 h-48 md:h-full bg-black relative group shrink-0">
+            {{-- LEFT SIDE: Image (Mobile: Top, Desktop: Left) --}}
+            <div class="w-full md:w-1/2 h-56 md:h-auto bg-black relative group shrink-0">
                 <img :src="modalImages[modalIndex]" class="w-full h-full object-cover opacity-90">
+                
+                {{-- Navigasi Gambar --}}
                 <div class="absolute inset-0 flex items-center justify-between px-4 opacity-0 group-hover:opacity-100 transition duration-300" x-show="modalImages.length > 1">
-                    <button @click="prevImage()" class="bg-black/60 text-white p-2 rounded-full hover:bg-gold hover:text-black transition transform hover:scale-110">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <button @click="prevImage()" class="bg-black/60 text-white p-2 rounded-full hover:bg-gold hover:text-black transition transform hover:scale-110 shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                     </button>
-                    <button @click="nextImage()" class="bg-black/60 text-white p-2 rounded-full hover:bg-gold hover:text-black transition transform hover:scale-110">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <button @click="nextImage()" class="bg-black/60 text-white p-2 rounded-full hover:bg-gold hover:text-black transition transform hover:scale-110 shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </button>
                 </div>
             </div>
             
-            <div class="w-full md:w-1/2 flex flex-col bg-dark-900">
-                <div class="flex-1 overflow-y-auto p-8 custom-scrollbar">
-                    <h3 class="text-2xl md:text-3xl font-serif text-gold mb-2" x-text="modalTitle"></h3>
-                    <div class="w-16 h-1 bg-white/20 mb-6"></div>
-                    <div class="text-gray-300 leading-relaxed text-sm md:text-base whitespace-pre-line mb-8" x-text="modalDesc"></div>
+            {{-- RIGHT SIDE: Content (Mobile: Bottom, Desktop: Right) --}}
+            {{-- KUNCI PERBAIKAN: min-h-0 agar flex child bisa di-scroll --}}
+            <div class="w-full md:w-1/2 flex flex-col bg-dark-900 min-h-0 flex-1">
+                
+                {{-- Scrollable Area --}}
+                <div class="flex-1 overflow-y-auto p-6 md:p-8 custom-scrollbar overscroll-contain">
+                    <h3 class="text-xl md:text-3xl font-serif text-gold mb-2 pr-8" x-text="modalTitle"></h3>
+                    <div class="w-16 h-1 bg-white/20 mb-4 md:mb-6"></div>
+                    
+                    {{-- Deskripsi --}}
+                    <div class="text-gray-300 leading-relaxed text-sm md:text-base whitespace-pre-line mb-6 md:mb-8" x-text="modalDesc"></div>
+                    
+                    {{-- Activities Gallery Section --}}
                     <div class="mt-4 pt-6 border-t border-white/10">
                         <h5 class="text-white font-serif text-lg mb-4 flex items-center gap-2">
                             <span class="w-2 h-2 bg-gold rounded-full"></span>
                             Aktivitas & Galeri
                         </h5>
-                        <div class="grid grid-cols-3 gap-2">
+                        <div class="grid grid-cols-3 gap-2 pb-4">
                             <template x-for="(img, i) in modalImages" :key="i">
                                 <div @click="modalIndex = i" 
                                      class="relative aspect-square cursor-pointer overflow-hidden rounded border border-white/10 hover:border-gold transition group">
@@ -209,8 +223,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-4 border-t border-white/10 bg-black/20 text-center">
-                    <span class="text-xs text-gray-500 uppercase tracking-widest">PT Arnov Prima Nusantara</span>
+                
+                {{-- Footer Modal --}}
+                <div class="p-3 border-t border-white/10 bg-black/20 text-center shrink-0 z-10">
+                    <span class="text-[10px] text-gray-500 uppercase tracking-widest">PT Arnov Prima Nusantara</span>
                 </div>
             </div>
         </div>

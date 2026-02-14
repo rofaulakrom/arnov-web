@@ -6,7 +6,7 @@
             <a href="{{ route('home') }}" class="flex items-center gap-3 group z-50">
                 <div class="flex flex-col">
                     <span class="text-2xl font-serif font-bold text-white tracking-widest leading-none group-hover:text-gold transition duration-300">
-                        ARNOV <span class="text-gold">PRIMA </span>NUSANTARA
+                        AR<span class="text-gold">PRI</span>NUS
                     </span>
                     <span class="text-[0.6rem] text-gray-500 uppercase tracking-[0.3em] mt-1">
                         PT Arnov Prima Nusantara
