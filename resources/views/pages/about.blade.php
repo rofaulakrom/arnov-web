@@ -103,7 +103,7 @@
                 {{-- Komisaris --}}
                 <div class="group bg-dark-900/80 backdrop-blur-sm border border-white/5 p-8 hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 rounded-sm">
                     <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gray-700 group-hover:border-gold transition duration-500 shadow-lg">
-                        <img src="{{ asset('img/pdadang.jpeg') }}" alt="Pa Dadang" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/pdadang.JPEG') }}" alt="Pa Dadang" class="w-full h-full object-cover">
                     </div>
                     
                     <h4 class="text-xl font-serif text-white mb-1 group-hover:text-gold transition">Bapak Dadang Sudrajat</h4>
@@ -119,7 +119,7 @@
                 {{-- Direktur Utama --}}
                 <div class="group bg-dark-900/80 backdrop-blur-sm border border-white/5 p-8 hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 rounded-sm">
                     <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gray-700 group-hover:border-gold transition duration-500 shadow-lg">
-                        <img src="{{ asset('img/arief.jpeg') }}" alt="Arief" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/arief.JPEG') }}" alt="Arief" class="w-full h-full object-cover">
                     </div>
                     
                     <h4 class="text-xl font-serif text-white mb-1 group-hover:text-gold transition">Arief Rachman Sasmita</h4>
@@ -162,7 +162,7 @@
                 {{-- GM Operational (Industrial) --}}
                 <div class="group bg-dark-900/80 backdrop-blur-sm border border-white/5 p-8 hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 rounded-sm">
                     <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gray-700 group-hover:border-gold transition duration-500 shadow-lg">
-                        <img src="{{ asset('img/psudrajat.jpeg') }}" alt="Pa Sudrajat" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/psudrajat.JPEG') }}" alt="Pa Sudrajat" class="w-full h-full object-cover">
                     </div>
                     
                     <h4 class="text-xl font-serif text-white mb-1 group-hover:text-gold transition">Bapak Sudrajat</h4>
@@ -177,7 +177,7 @@
                 {{-- Operational Supervisor --}}
                 <div class="group bg-dark-900/80 backdrop-blur-sm border border-white/5 p-8 hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 rounded-sm">
                     <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gray-700 group-hover:border-gold transition duration-500 shadow-lg">
-                        <img src="{{ asset('img/nazar.jpeg') }}" alt="Nazar" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/nazar.JPEG') }}" alt="Nazar" class="w-full h-full object-cover">
                     </div>
                     
                     <h4 class="text-xl font-serif text-white mb-1 group-hover:text-gold transition">Habib Nazar</h4>
@@ -195,7 +195,7 @@
                 {{-- GM Operational (Tech) --}}
                 <div class="group bg-dark-900/80 backdrop-blur-sm border border-white/5 p-8 hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 rounded-sm">
                     <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gray-700 group-hover:border-gold transition duration-500 shadow-lg">
-                        <img src="{{ asset('img/rofa.png') }}" alt="Rofa" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/rofa.PNG') }}" alt="Rofa" class="w-full h-full object-cover">
                     </div>
                     
                     <h4 class="text-xl font-serif text-white mb-1 group-hover:text-gold transition">Rofa'ul Akrom H, S.Tr.Kom.</h4>
