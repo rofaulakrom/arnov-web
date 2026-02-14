@@ -3,7 +3,7 @@
 
 @section('content')
 {{-- 
-    DATA PROCESSING
+    DATA PROCESSING (FULL TEXT)
 --}}
 @php
     // GRUP 1: Production & Consumer Goods
@@ -11,7 +11,14 @@
         [
             'category' => 'Fishery & Aquaculture',
             'title' => 'ARNOV FEED & FISH',
-            'desc' => 'ARNOV FEED & FISH adalah divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang perikanan dan pakan ikan...',
+            'desc' => 'ARNOV FEED & FISH adalah divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang perikanan dan pakan ikan, meliputi:
+                •   Produksi dan perdagangan pakan ikan
+                •   Kegiatan budidaya dan pembesaran ikan
+                •   Pengelolaan tambak dan sarana perikanan
+                •   Perdagangan hasil perikanan air tawar
+                •   Distribusi produk pakan dan hasil ikan secara offline maupun online
+
+            Divisi ini dikembangkan untuk mendukung sektor perikanan berkelanjutan dengan fokus pada efisiensi produksi, kualitas hasil, dan kesinambungan usaha.',
             'images' => [
                 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop', 
                 'https://images.unsplash.com/photo-1516918844889-132d78603689?q=80&w=600&auto=format&fit=crop',
@@ -20,7 +27,13 @@
         [
             'category' => 'DIGITAL CREATIVE',
             'title' => 'APN UMKM',
-            'desc' => 'APN UMKM adalah divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang pengembangan...',
+            'desc' => 'APN UMKM adalah divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang pengembangan, produksi, dan perdagangan usaha mikro, kecil, dan menengah (UMKM), meliputi:
+                •   Produksi dan penjualan produk makanan dan minuman, seperti kue, camilan, cimol, dan produk olahan lainnya
+                •   Perdagangan hasil pertanian dan perkebunan, termasuk penjualan durian dan produk segar lainnya
+                •   Pengelolaan usaha jongko, gerai, dan penjualan langsung (offline)
+                •   Penjualan produk melalui offline dan online
+
+            Divisi ini berfokus pada usaha berjalan (real business) yang cepat berputar, mudah dikembangkan, dan dapat direplikasi ke berbagai lokasi.',
             'images' => [
                 'https://media.istockphoto.com/id/1631276318/photo/fish-pellets-held-by-a-child-with-a-pond-garden-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=OjjwcgcHaBhcO3xewfzUYcmhVuUlOJ-N8xSYu380isY=',
                 'https://images.unsplash.com/photo-1627920769837-184547907f16?q=80&w=600&auto=format&fit=crop',
@@ -33,7 +46,13 @@
         [
             'category' => 'APN CONSTRUCTION',
             'title' => 'APN INDUSTRIAL CONSTRUCTION',
-            'desc' => 'APN INDUSTRIAL CONSTRUCTION adalah divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang jasa konstruksi...',
+            'desc' => 'APN INDUSTRIAL CONSTRUCTION adalah divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang jasa konstruksi dan industri, meliputi:
+            •   Pekerjaan konstruksi baja dan besi (fabrikasi dan pemasangan rangka baja, struktur bangunan, dan pekerjaan logam lainnya)
+            •   Pekerjaan konstruksi sipil ringan hingga menengah (bangunan, gudang, kanopi, dan fasilitas pendukung)
+            •   Pengadaan material konstruksi (baja, besi, dan bahan pendukung proyek)
+            •   Jasa perbaikan, renovasi, dan pemeliharaan bangunan industri
+            
+            Divisi ini melayani proyek swasta maupun pemerintah, dengan fokus pada pekerjaan konstruksi yang efisien, profesional, dan berkelanjutan.',
             'images' => [
                 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=600&auto=format&fit=crop',
                 'https://images.unsplash.com/photo-1535921863-71887375a894?q=80&w=600&auto=format&fit=crop',
@@ -42,7 +61,15 @@
         [
             'category' => 'APN TECH',
             'title' => 'APN DIGITAL & TECHNOLOGY',
-            'desc' => 'APN Digital & Technology adalah divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang layanan digital...',
+            'desc' => 'APN Digital & Technology adalah divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang layanan digital, teknologi informasi, dan pengembangan sistem, meliputi:
+            •   Pembuatan dan pengembangan website
+            •   Pembuatan company profile digital
+            •   Pengembangan aplikasi dan sistem IT
+            •   Jasa programming dan solusi teknologi informasi
+            •   Pengelolaan media digital dan konten promosi
+            •   Jasa branding, publikasi, dan pemasaran digital
+
+            Divisi ini melayani kebutuhan internal perusahaan maupun klien eksternal, baik perorangan, UMKM, perusahaan swasta, maupun instansi, dengan tujuan menyediakan solusi digital yang efisien, profesional, dan berkelanjutan.',
             'images' => [
                 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600&auto=format&fit=crop',
                 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600&auto=format&fit=crop',
@@ -51,7 +78,13 @@
         [
             'category' => 'LIFESTYLE AND FRAGRANCE',
             'title' => 'BE&CO',
-            'desc' => 'BE&CO adalah merek dan divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang produk konsumen...',
+            'desc' => 'BE&CO adalah merek dan divisi usaha di bawah PT ARNOV PRIMA NUSANTARA yang bergerak di bidang produk konsumen dan lifestyle, meliputi:
+                •   Produksi dan perdagangan produk parfum dan wewangian
+                •   Pengembangan merek (brand) dan produk turunan
+                •   Penjualan produk melalui offline maupun online
+                •   Aktivitas pemasaran dan distribusi produk
+
+            BE&CO dikembangkan sebagai brand bernilai komersial tinggi dengan fokus pada kualitas produk, identitas merek, dan keberlanjutan bisnis.',
             'images' => [
                 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&auto=format&fit=crop',
                 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=600&auto=format&fit=crop',
@@ -123,7 +156,7 @@
 
     </div>
 
-    {{-- MODAL POPUP (Sama, tidak ada perubahan) --}}
+    {{-- MODAL POPUP --}}
     <div x-show="isOpen" style="display: none;" class="fixed inset-0 z-50 flex items-center justify-center p-4"
          x-transition:enter="transition ease-out duration-300"
          x-transition:enter-start="opacity-0 backdrop-blur-none"
@@ -274,7 +307,7 @@
         }
     }
 
-    // Modal Logic (Tetap Sama)
+    // Logic untuk Modal (Global Page)
     function servicesPage() { 
         return {
             isOpen: false,
